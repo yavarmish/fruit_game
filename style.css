@@ -1,0 +1,103 @@
+html {
+  height: 100%;
+  background: radial-gradient(circle, white, rgba(196, 189, 189, 0.842));
+}
+#container {
+  height: 600px;
+  width: 750px;
+  background: #9dd2ea;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 0px 0px #009de4;
+  position: relative;
+}
+#score {
+  background: #f1ff92;
+  color: #888e5f;
+  padding: 10px;
+  position: absolute;
+  left: 700px;
+  box-shadow: 0px 4px #9da853;
+}
+#fruitcontainer {
+  width: 650px;
+  height: 400px;
+  margin: 50px auto 10px auto;
+  background: #ffffff;
+  box-shadow: 0px 4px #535aa8;
+  font-size: 100px;
+  font-family: cursive;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+#instruction {
+  width: 450px;
+  height: 50px;
+  background: #b481d9;
+  margin: 10px auto;
+  text-align: center;
+  line-height: 45px;
+  box-shadow: 0px 4px #8153a8;
+}
+#choices {
+  height: 100px;
+  width: 450px;
+  margin: 5px auto;
+}
+
+#startreset:active {
+  box-shadow: 0px 0px #6b54d3;
+  position: relative;
+  top: 4px;
+}
+#startreset {
+  width: 78px;
+  margin: 0 auto;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+
+  transition: all 0.2s;
+}
+#trialsleft {
+  width: 100px;
+  height: 21px;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  background: rgba(181, 235, 36, 0.78);
+  border-radius: 3px;
+  box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+#gameover {
+  height: 200px;
+  width: 500px;
+  background: linear-gradient(#f3ca6b, #f3706c);
+  color: white;
+  font-size: 2.5em;
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+  top: 200px;
+  left: 420px;
+  z-index: 2;
+  display: none;
+  line-height: 20px;
+}
+.life {
+  width: 16px;
+  height: 16px;
+  margin: 3px 5px;
+  text-align: center;
+}
+.fruit {
+  display: none;
+  position: absolute;
+}
