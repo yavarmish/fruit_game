@@ -33,11 +33,12 @@ $(function() {
   $("#fruit1").mouseover(function() {
     score++;
     $("#scorevalue").html(score);
-    document.getElementById("slicesound").play();
+    // document.getElementById("slicesound").play();
+    $("#slicesound")[0].play();
     clearInterval(action);
     $("#fruit1").hide("explode", 500);
     // startAction();
-    setTimeout(startAction, 510);
+    setTimeout(startAction, 800);
   });
   function addHearts() {
     $("#trialsleft").empty();
@@ -49,8 +50,8 @@ $(function() {
     $("#fruit1").show();
     chooseFruit();
     $("#fruit1").css({
-      left: Math.round(Math.random() * 550),
-      top: -50
+      'left': Math.round(Math.random() * 550),
+      'top': -50
     });
     step = 1 + Math.round(Math.random() * 5);
     action = setInterval(function() {
@@ -60,8 +61,8 @@ $(function() {
           $("#fruit1").show();
           chooseFruit();
           $("#fruit1").css({
-            left: Math.round(Math.random() * 550),
-            top: -50
+            'left': Math.round(Math.random() * 550),
+            'top': -50
           });
           step = 1 + Math.round(Math.random() * 5);
           trialsleft--;
