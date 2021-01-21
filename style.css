@@ -87,7 +87,7 @@ html {
   text-transform: uppercase;
   position: absolute;
   top: 200px;
-  left: 520px;
+  left: 50%;
   z-index: 2;
   display: none;
   line-height: 20px;
