@@ -84,7 +84,7 @@ $(function() {
   function chooseFruit() {
     $("#fruit1").attr(
       "src",
-      "images/" + fruits[Math.round(Math.random() * 8)] + ".jpg"
+      "images/" + fruits[Math.round(Math.random() * 8)] + ".png"
     );
   }
   function stopAction() {
