@@ -40,6 +40,16 @@ $(function() {
     // startAction();
     setTimeout(startAction, 800);
   });
+  $("#fruit1").on('touchstart',function() {
+    score++;
+    $("#scorevalue").html(score);
+    // document.getElementById("slicesound").play();
+    $("#slicesound")[0].play();
+    clearInterval(action);
+    $("#fruit1").hide("explode", 500);
+    // startAction();
+    setTimeout(startAction, 800);
+  });
   function addHearts() {
     $("#trialsleft").empty();
     for (i = 0; i < trialsleft; i++) {
