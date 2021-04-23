@@ -82,7 +82,7 @@ $(function() {
           $("#startreset").html("Start Game");
           $("#gameover").show();
           $("#gameover").html(
-            "<p>Game Over</p><p>Your score is " + score + "</p>"
+            "<p style='padding-top: 50px'>Game Over</p><p>Your score is " + score + "</p>"
           );
           $("#trialsleft").hide();
 
