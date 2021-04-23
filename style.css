@@ -1,6 +1,8 @@
 html {
   /* height: 100%; */
   background: radial-gradient(circle, white, rgba(196, 189, 189, 0.842));
+  overflow-y: hidden;
+  
 }
 #container {
   height: 568px;
